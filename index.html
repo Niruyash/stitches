@@ -1,1 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TailorMe | Boutique Stitching for Women</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    /* === Modern Luxe Palette ===
+       Midnight Navy:   #1F2A44
+       Champagne Gold:  #D4B46A
+       Dusty Rose:      #D8A7B1
+       Light Grey:      #F2F2F4
+    */
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #F2F2F4; /* Light Grey */
+      color: #2B2B2B;
+    }
+
+    header {
+      background: #1F2A44; /* Midnight Navy */
+      color: #FFFFFF;
+      padding: 22px 64px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      font-size: 26px;
+      letter-spacing: 0.5px;
+      font-weight: 600;
+    }
+
+    nav a {
+      color: #FFFFFF;
+      margin-left: 28px;
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 15px;
+    }
+
+    nav a:hover { color: #D4B46A; }
+
+    .hero {
+      padding: 90px 64px;
+      display: grid;
+      grid-template-columns: 1.2fr 1fr;
+      gap: 60px;
+      align-items: center;
+      background: linear-gradient(135deg, #FFFFFF 0%, #F2F2F4 100%);
+    }
+
+    .hero h2 {
+      font-size: 46px;
+      line-height: 1.15;
+      margin-bottom: 22px;
+      color: #1F2A44;
+      font-weight: 700;
+    }
+
+    .hero h2 span { color: #D8A7B1; }
+
+    .hero p {
+      font-size: 18px;
+      color: #555;
+      margin-bottom: 36px;
+      max-width: 520px;
+    }
+
+    .cta {
+      background: #D4B46A; /* Champagne Gold */
+      color: #1F2A44;
+      padding: 16px 34px;
+      border: none;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 30px;
+      font-weight: 600;
+    }
+
+    .cta:hover { background: #C4A457; }
+
+    .section {
+      padding: 80px 64px;
+    }
+
+    .section h3 {
+      font-size: 34px;
+      margin-bottom: 18px;
+      color: #1F2A44;
+      font-weight: 600;
+    }
+
+    .section p {
+      max-width: 680px;
+      color: #666;
+      margin-bottom: 48px;
+      font-size: 16px;
+    }
+
+    .steps {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 28px;
+    }
+
+    .card {
+      background: #FFFFFF;
+      padding: 28px;
+      border-radius: 18px;
+      border: 1px solid #E6E6EA;
+    }
+
+    .card h4 {
+      margin-bottom: 10px;
+      color: #1F2A44;
+      font-weight: 600;
+    }
+
+    .card p { color: #666; }
+
+    .boutiques {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 28px;
+    }
+
+    .boutique {
+      background: #FFFFFF;
+      padding: 26px;
+      border-radius: 18px;
+      border-top: 5px solid #D8A7B1; /* Dusty Rose */
+    }
+
+    .boutique h4 { color: #1F2A44; margin-bottom: 6px; }
+
+    footer {
+      background: #1F2A44;
+      color: #DADAE0;
+      padding: 48px 64px;
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr;
+      gap: 48px;
+    }
+
+    footer h4 { color: #FFFFFF; margin-bottom: 14px; }
+
+    footer a {
+      display: block;
+      color: #DADAE0;
+      text-decoration: none;
+      margin-bottom: 8px;
+      font-size: 14px;
+    }
+
+    footer a:hover { color: #D4B46A; }
+
+    @media(max-width: 900px) {
+      .hero { grid-template-columns: 1fr; }
+      .steps, .boutiques { grid-template-columns: 1fr; }
+      header { flex-direction: column; align-items: flex-start; gap: 12px; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>TailorMe</h1>
+  <nav>
+    <a href="#how">How It Works</a>
+    <a href="#boutiques">Boutiques</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div>
+    <h2>Beautifully Stitched.<br><span>By the Boutique You Choose.</span></h2>
+    <p>From blouses to bespoke outfits, TailorMe lets you choose trusted boutiques and get elegant stitching without endless visits or uncertainty.</p>
+    <button class="cta">Book Your Stitching</button>
+  </div>
+  <div>
+    <img src="https://via.placeholder.com/500x520" alt="Women's tailoring" style="width:100%; border-radius:26px;">
+  </div>
+</section>
+
+<section id="how" class="section">
+  <h3>How It Works</h3>
+  <p>Designed for women who value time, quality, and aesthetics.</p>
+  <div class="steps">
+    <div class="card"><h4>Choose a Boutique</h4><p>Select from verified women-focused boutiques.</p></div>
+    <div class="card"><h4>Select Your Service</h4><p>Blouse, suit, alteration, or custom design.</p></div>
+    <div class="card"><h4>Place Order</h4><p>Clear pricing with realistic timelines.</p></div>
+    <div class="card"><h4>Relax</h4><p>Your outfit is stitched and delivered beautifully.</p></div>
+  </div>
+</section>
+
+<section id="services" class="section">
+  <h3>Services We Offer</h3>
+  <div class="steps">
+    <div class="card"><h4>Designer Blouses</h4><p>Perfect fits, premium finishes.</p></div>
+    <div class="card"><h4>Salwar & Suits</h4><p>Everyday elegance or festive wear.</p></div>
+    <div class="card"><h4>Alterations</h4><p>Precise changes without repeat visits.</p></div>
+    <div class="card"><h4>Express Stitching</h4><p>For last-minute occasions.</p></div>
+  </div>
+</section>
+
+<section id="boutiques" class="section">
+  <h3>Featured Boutiques</h3>
+  <div class="boutiques">
+    <div class="boutique"><h4>Studio A</h4><p>Designer blouses · Indiranagar</p></div>
+    <div class="boutique"><h4>Silk & Thread</h4><p>Ethnic wear specialists · Jayanagar</p></div>
+    <div class="boutique"><h4>Needle Grace</h4><p>Custom tailoring · Malleshwaram</p></div>
+  </div>
+</section>
+
+<footer id="contact">
+  <div>
+    <h4>TailorMe</h4>
+    <p>Modern boutique stitching for women who know what they want.</p>
+  </div>
+  <div>
+    <h4>Company</h4>
+    <a href="#">About</a>
+    <a href="#">Partner With Us</a>
+  </div>
+  <div>
+    <h4>Support</h4>
+    <a href="#">Help</a>
+    <a href="#">Contact</a>
+  </div>
+</footer>
+
+</body>
+</html>
 
