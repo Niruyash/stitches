@@ -6,31 +6,142 @@
   <title>TailorMe | Choose Your Boutique. Get It Stitched.</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
   <style>
+    /* === Contemporary Heritage Palette ===
+       Deep Terracotta: #8C3A2B
+       Mustard Gold:    #C9971A
+       Soft Sage:       #9DB3A1
+       Warm Off-White:  #FAF7F2
+    */
+
     * { box-sizing: border-box; margin: 0; padding: 0; }
-    body { font-family: 'Inter', sans-serif; color: #1a1a1a; background: #fafafa; }
-    header { background: #111; color: #fff; padding: 20px 60px; display: flex; justify-content: space-between; align-items: center; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      color: #2A2A2A;
+      background: #FAF7F2; /* Warm Off-White */
+    }
+
+    header {
+      background: #8C3A2B; /* Deep Terracotta */
+      color: #FAF7F2;
+      padding: 20px 60px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
     header h1 { font-size: 24px; letter-spacing: 1px; }
-    nav a { color: #fff; margin-left: 24px; text-decoration: none; font-weight: 500; }
 
-    .hero { padding: 80px 60px; display: grid; grid-template-columns: 1.2fr 1fr; gap: 40px; align-items: center; }
-    .hero h2 { font-size: 44px; line-height: 1.2; margin-bottom: 20px; }
-    .hero p { font-size: 18px; color: #444; margin-bottom: 30px; }
-    .cta { background: #000; color: #fff; padding: 14px 28px; border: none; font-size: 16px; cursor: pointer; }
+    nav a {
+      color: #FAF7F2;
+      margin-left: 24px;
+      text-decoration: none;
+      font-weight: 500;
+    }
 
-    .section { padding: 70px 60px; }
-    .section h3 { font-size: 32px; margin-bottom: 20px; }
-    .section p { max-width: 700px; color: #555; margin-bottom: 40px; }
+    nav a:hover { color: #C9971A; }
 
-    .steps { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; }
-    .card { background: #fff; padding: 24px; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.06); }
-    .card h4 { margin-bottom: 10px; }
+    .hero {
+      padding: 80px 60px;
+      display: grid;
+      grid-template-columns: 1.2fr 1fr;
+      gap: 40px;
+      align-items: center;
+      background: #FAF7F2;
+    }
 
-    .boutiques { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
-    .boutique { background: #fff; padding: 20px; border-radius: 12px; }
+    .hero h2 {
+      font-size: 44px;
+      line-height: 1.2;
+      margin-bottom: 20px;
+      color: #8C3A2B;
+    }
 
-    footer { background: #111; color: #ccc; padding: 40px 60px; display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 40px; }
-    footer h4 { color: #fff; margin-bottom: 12px; }
-    footer a { display: block; color: #ccc; text-decoration: none; margin-bottom: 8px; }
+    .hero p {
+      font-size: 18px;
+      color: #555;
+      margin-bottom: 30px;
+    }
+
+    .cta {
+      background: #C9971A; /* Mustard Gold */
+      color: #1a1a1a;
+      padding: 14px 28px;
+      border: none;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 6px;
+      font-weight: 600;
+    }
+
+    .cta:hover { background: #B88915; }
+
+    .section {
+      padding: 70px 60px;
+    }
+
+    .section h3 {
+      font-size: 32px;
+      margin-bottom: 20px;
+      color: #8C3A2B;
+    }
+
+    .section p {
+      max-width: 700px;
+      color: #555;
+      margin-bottom: 40px;
+    }
+
+    .steps {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 24px;
+    }
+
+    .card {
+      background: #FFFFFF;
+      padding: 24px;
+      border-radius: 14px;
+      border: 1px solid #E6E1D9;
+    }
+
+    .card h4 {
+      margin-bottom: 10px;
+      color: #8C3A2B;
+    }
+
+    .boutiques {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+
+    .boutique {
+      background: #FFFFFF;
+      padding: 20px;
+      border-radius: 14px;
+      border-left: 6px solid #9DB3A1; /* Soft Sage */
+    }
+
+    footer {
+      background: #2F2F2F;
+      color: #D8D2C7;
+      padding: 40px 60px;
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr;
+      gap: 40px;
+    }
+
+    footer h4 { color: #FAF7F2; margin-bottom: 12px; }
+
+    footer a {
+      display: block;
+      color: #D8D2C7;
+      text-decoration: none;
+      margin-bottom: 8px;
+    }
+
+    footer a:hover { color: #C9971A; }
 
     @media(max-width: 900px) {
       .hero { grid-template-columns: 1fr; }
@@ -58,28 +169,28 @@
     <button class="cta">Explore Boutiques</button>
   </div>
   <div>
-    <img src="https://via.placeholder.com/500x400" alt="Tailoring" style="width:100%; border-radius:16px;">
+    <img src="https://via.placeholder.com/500x400" alt="Tailoring" style="width:100%; border-radius:18px;">
   </div>
 </section>
 
 <section id="how" class="section">
   <h3>How TailorMe Works</h3>
-  <p>This is intentionally simple. If it feels complex, you’re doing something wrong.</p>
+  <p>Simple by design. If it feels complicated, it’s broken.</p>
   <div class="steps">
     <div class="card"><h4>1. Select a Boutique</h4><p>Choose from verified, high-quality tailoring boutiques.</p></div>
-    <div class="card"><h4>2. Choose a Service</h4><p>Blouse, saree fall, kurta, alteration, or full custom stitch.</p></div>
-    <div class="card"><h4>3. Place Order</h4><p>Book online with clear pricing and delivery timelines.</p></div>
-    <div class="card"><h4>4. Get It Delivered</h4><p>Stitched by your chosen boutique and delivered to you.</p></div>
+    <div class="card"><h4>2. Choose a Service</h4><p>Blouse, kurta, alterations, or custom stitch.</p></div>
+    <div class="card"><h4>3. Place Order</h4><p>Clear pricing and realistic delivery timelines.</p></div>
+    <div class="card"><h4>4. Get It Delivered</h4><p>Stitched by your chosen boutique and delivered.</p></div>
   </div>
 </section>
 
 <section id="services" class="section">
   <h3>Our Services</h3>
   <div class="steps">
-    <div class="card"><h4>Women’s Wear</h4><p>Blouses, suits, lehengas, alterations.</p></div>
-    <div class="card"><h4>Men’s Wear</h4><p>Kurtas, shirts, trousers, ethnic wear.</p></div>
-    <div class="card"><h4>Express Delivery</h4><p>Urgent stitching by selected partners.</p></div>
-    <div class="card"><h4>Alterations</h4><p>Precise fitting fixes without repeat visits.</p></div>
+    <div class="card"><h4>Women’s Wear</h4><p>Blouses, suits, lehengas.</p></div>
+    <div class="card"><h4>Men’s Wear</h4><p>Kurtas, shirts, ethnic wear.</p></div>
+    <div class="card"><h4>Express Delivery</h4><p>Urgent stitching by select partners.</p></div>
+    <div class="card"><h4>Alterations</h4><p>Precise fitting without repeat visits.</p></div>
   </div>
 </section>
 
