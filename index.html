@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TailorMe | Choose Your Boutique. Get It Stitched.</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Inter', sans-serif; color: #1a1a1a; background: #fafafa; }
+    header { background: #111; color: #fff; padding: 20px 60px; display: flex; justify-content: space-between; align-items: center; }
+    header h1 { font-size: 24px; letter-spacing: 1px; }
+    nav a { color: #fff; margin-left: 24px; text-decoration: none; font-weight: 500; }
+
+    .hero { padding: 80px 60px; display: grid; grid-template-columns: 1.2fr 1fr; gap: 40px; align-items: center; }
+    .hero h2 { font-size: 44px; line-height: 1.2; margin-bottom: 20px; }
+    .hero p { font-size: 18px; color: #444; margin-bottom: 30px; }
+    .cta { background: #000; color: #fff; padding: 14px 28px; border: none; font-size: 16px; cursor: pointer; }
+
+    .section { padding: 70px 60px; }
+    .section h3 { font-size: 32px; margin-bottom: 20px; }
+    .section p { max-width: 700px; color: #555; margin-bottom: 40px; }
+
+    .steps { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; }
+    .card { background: #fff; padding: 24px; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.06); }
+    .card h4 { margin-bottom: 10px; }
+
+    .boutiques { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+    .boutique { background: #fff; padding: 20px; border-radius: 12px; }
+
+    footer { background: #111; color: #ccc; padding: 40px 60px; display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 40px; }
+    footer h4 { color: #fff; margin-bottom: 12px; }
+    footer a { display: block; color: #ccc; text-decoration: none; margin-bottom: 8px; }
+
+    @media(max-width: 900px) {
+      .hero { grid-template-columns: 1fr; }
+      .steps, .boutiques { grid-template-columns: 1fr; }
+      header { flex-direction: column; align-items: flex-start; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>TailorMe</h1>
+  <nav>
+    <a href="#how">How It Works</a>
+    <a href="#boutiques">Boutiques</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div>
+    <h2>Choose Your Boutique.<br>We Handle the Stitching.</h2>
+    <p>TailorMe connects you with Bangalore’s best boutiques. You select the boutique, choose the service, and get perfectly stitched outfits—without the usual tailoring chaos.</p>
+    <button class="cta">Explore Boutiques</button>
+  </div>
+  <div>
+    <img src="https://via.placeholder.com/500x400" alt="Tailoring" style="width:100%; border-radius:16px;">
+  </div>
+</section>
+
+<section id="how" class="section">
+  <h3>How TailorMe Works</h3>
+  <p>This is intentionally simple. If it feels complex, you’re doing something wrong.</p>
+  <div class="steps">
+    <div class="card"><h4>1. Select a Boutique</h4><p>Choose from verified, high-quality tailoring boutiques.</p></div>
+    <div class="card"><h4>2. Choose a Service</h4><p>Blouse, saree fall, kurta, alteration, or full custom stitch.</p></div>
+    <div class="card"><h4>3. Place Order</h4><p>Book online with clear pricing and delivery timelines.</p></div>
+    <div class="card"><h4>4. Get It Delivered</h4><p>Stitched by your chosen boutique and delivered to you.</p></div>
+  </div>
+</section>
+
+<section id="services" class="section">
+  <h3>Our Services</h3>
+  <div class="steps">
+    <div class="card"><h4>Women’s Wear</h4><p>Blouses, suits, lehengas, alterations.</p></div>
+    <div class="card"><h4>Men’s Wear</h4><p>Kurtas, shirts, trousers, ethnic wear.</p></div>
+    <div class="card"><h4>Express Delivery</h4><p>Urgent stitching by selected partners.</p></div>
+    <div class="card"><h4>Alterations</h4><p>Precise fitting fixes without repeat visits.</p></div>
+  </div>
+</section>
+
+<section id="boutiques" class="section">
+  <h3>Featured Boutiques</h3>
+  <div class="boutiques">
+    <div class="boutique"><h4>Studio A</h4><p>Luxury women’s tailoring · Indiranagar</p></div>
+    <div class="boutique"><h4>Classic Cuts</h4><p>Men’s ethnic & formals · Jayanagar</p></div>
+    <div class="boutique"><h4>Needle & Thread</h4><p>Designer blouses · Malleshwaram</p></div>
+  </div>
+</section>
+
+<footer id="contact">
+  <div>
+    <h4>TailorMe</h4>
+    <p>One platform. Many boutiques. Zero tailoring stress.</p>
+  </div>
+  <div>
+    <h4>Company</h4>
+    <a href="#">About</a>
+    <a href="#">Partner With Us</a>
+  </div>
+  <div>
+    <h4>Support</h4>
+    <a href="#">Help</a>
+    <a href="#">Contact</a>
+  </div>
+</footer>
+
+</body>
+</html>
